@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book a Call</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Alkatra&display=swap");
+    </style>
+  </head>
+  <body>
+    <h1>BOOK A CALL</h1>
+    <form id="myform">
+      <p>Schedule a call we will call you back</p>
+      <div class="input-group mb-3">
+        <label for="name" class="input-group-text">NAME</label>
+        <input type="text" class="form-control" id="name" value="" />
+      </div>
+      <div class="input-group mb-3">
+        <label for="email" class="input-group-text">EMAIL</label>
+        <input type="email" class="form-control" id="email" value="" />
+      </div>
+      <div class="input-group mb-3">
+        <label for="mobile" class="input-group-text">MOBILE</label>
+        <input
+          type="text"
+          pattern="[0-9]"
+          class="form-control"
+          id="mobile"
+          value=""
+        />
+      </div>
+      <div class="input-group mb-3">
+        <label for="time" class="input-group-text">TIME</label>
+        <input type="datetime-local" class="form-control" id="time" />
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-success" id="schedulebutton">
+          SCHEDULE CALL
+        </button>
+      </div>
+    </form>
+
+    <p>Scheduled calls are shown below</p>
+    <ul id="addHere"></ul>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

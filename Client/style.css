@@ -1,0 +1,45 @@
+body {
+  text-align: center;
+  font-family: "Alkatra", cursive;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+#bookingForm {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.input-group-text {
+  background-color: #e9ecef;
+}
+
+.form-control {
+  border-color: #ced4da;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  border-color: #218838;
+}
+
+#scheduledCalls {
+  margin-top: 30px;
+}
+
+.scheduled-call {
+  background-color: #f8f9fa;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
